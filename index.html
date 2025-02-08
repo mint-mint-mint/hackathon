@@ -8,10 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
+
 <body>
     <video autoplay muted loop id="bgVideo">
         <source src="t.mp4" type="video/mp4">
     </video>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo-text">FASAL</span>
+        </div>
+    </header>
 
     <div class="container">
         <h1><i class="fas fa-seedling"></i> Crop Recommendation System</h1>
@@ -40,9 +48,22 @@
             <label for="initialCrop"><i class="fas fa-leaf"></i> Initial Crop:</label>
             <select id="initialCrop" name="initialCrop">
                 <option value="-Select-">-Select-</option>
-                <option value="wheat">Wheat</option>
-                <option value="soybean">Soybean</option>
-                <option value="corn">Corn</option>
+                <option value="Maize">Maize</option>
+                <option value="Kharif Sorghum">Kharif Sorghum</option>
+                <option value="Rabi">Rabi</option>
+                <option value="Soybean">Soybean</option>
+                <option value="Surgarcane">Sugarcane</option>
+                <option value="Wheat">Wheat</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="Rotation"><i class="fas fa-leaf"></i> Rotation:</label>
+            <select id="Rotation" name="Rotation">
+                <option value="-Select-">-Select-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
         </div>
 
@@ -54,30 +75,23 @@
         </div>
     </div>
 
-    <div class="parallax"></div>
-
-    <div class="content">
-        <h2>About Our System</h2>
-        <p>Our Crop Recommendation System uses advanced algorithms to suggest the best crops for your region and conditions.</p>
-    </div>
-
-    <div class="image-section">
-        <div class="image-card">
-            <img src="photo1.jpg" alt="crop">
-            <p>Sustainable Farming</p>
+    <section id="about-system" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Why Our Crop Recommendation System?</h2>
+                <p>
+                    In today's agricultural landscape, making informed decisions is crucial for success. Our system leverages cutting-edge technology to provide farmers with data-driven insights, optimizing crop selection and maximizing yields.
+                </p>
+                <h3>What We Offer:</h3>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><b>Personalized Recommendations:</b> Tailored advice based on your specific location, soil conditions, and climate data.</span>
+                    </div>
+                    
         </div>
-        <div class="image-card">
-            <img src="photo2.jpg" alt="crop">
-            <p>Innovative Agriculture</p>
-        </div>
-        <div class="image-card">
-            <img src="crop3.jpg" alt="crop">
-            <p>Precision Farming</p>
-        </div>
-    </div>
+    </section>
 
-    <div class="parallax"></div>
-    
     <footer>
         <p>&copy; 2025 Crop Recommendation System. All rights reserved.</p>
     </footer>
