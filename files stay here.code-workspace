@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/files stay here"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}

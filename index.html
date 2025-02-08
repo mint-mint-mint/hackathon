@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System</h1>
+
+        <label for="district">District:</label>
+        <select id="district" name="district">
+            <option value="-Select-">-Select-</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Kanyakumri">Kanyakumari</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Nilgiris">Nilgiris</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Salem">Salem</option>
+            <option value="South Arcot Cuddal">South Arcot Cuddal</option>
+            <option value="Thanjavus">Thanjavus</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Vellore">Vellore</option>
+            <!-- Add more districts as needed -->
+        </select><br><br>
+
+        <label for="initialCrop">Initial Crop:</label>
+        <select id="initialCrop" name="initialCrop">
+            <option value="-Select-">-Select-</option>
+            <option value="wheat">Wheat</option>
+            <option value="soybean">Soybean</option>
+            <option value="corn">Corn</option>
+            <!-- Add more crops as needed -->
+        </select><br><br>
+
+        <button onclick="recommendCrop()">Get Recommendation</button>
+
+        <div id="recommendation">
+            <h2>Recommended Crop:</h2>
+            <p id="cropName">Waiting for input...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
