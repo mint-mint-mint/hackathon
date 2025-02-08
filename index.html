@@ -5,45 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Recommendation System</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="t.mp4" type="video/mp4">
+    </video>
+
     <div class="container">
-        <h1>Crop Recommendation System</h1>
+        <h1><i class="fas fa-seedling"></i> Crop Recommendation System</h1>
 
-        <label for="district">District:</label>
-        <select id="district" name="district">
-            <option value="-Select-">-Select-</option>
-            <option value="Chengalpattu">Chengalpattu</option>
-            <option value="Coimbatore">Coimbatore</option>
-            <option value="Kanyakumri">Kanyakumari</option>
-            <option value="Madurai">Madurai</option>
-            <option value="Nilgiris">Nilgiris</option>
-            <option value="Ramanathapuram">Ramanathapuram</option>
-            <option value="Salem">Salem</option>
-            <option value="South Arcot Cuddal">South Arcot Cuddal</option>
-            <option value="Thanjavus">Thanjavus</option>
-            <option value="Tiruchirappalli">Tiruchirappalli</option>
-            <option value="Tirunelveli">Tirunelveli</option>
-            <option value="Vellore">Vellore</option>
-            <!-- Add more districts as needed -->
-        </select><br><br>
+        <div class="input-group">
+            <label for="district"><i class="fas fa-map-marker-alt"></i> District:</label>
+            <select id="district" name="district">
+                <option value="-Select-">-Select-</option>
+                <option value="Chengalpattu">Chengalpattu</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Kanyakumari">Kanyakumari</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Ramanathapuram">Ramanathapuram</option>
+                <option value="Salem">Salem</option>
+                <option value="South Arcot Cuddalore">South Aracot Cuddalore</option>
+                <option value="Thanjavur">Thanjavur</option>
+                <option value="The Nilgiris">The Nilgiris</option>
+                <option value="Tiruchirapalli">Tiruchirapalli</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+                <option value="Vellore">Vellore</option>
+                <!-- ... other options ... -->
+            </select>
+        </div>
 
-        <label for="initialCrop">Initial Crop:</label>
-        <select id="initialCrop" name="initialCrop">
-            <option value="-Select-">-Select-</option>
-            <option value="wheat">Wheat</option>
-            <option value="soybean">Soybean</option>
-            <option value="corn">Corn</option>
-            <!-- Add more crops as needed -->
-        </select><br><br>
+        <div class="input-group">
+            <label for="initialCrop"><i class="fas fa-leaf"></i> Initial Crop:</label>
+            <select id="initialCrop" name="initialCrop">
+                <option value="-Select-">-Select-</option>
+                <option value="wheat">Wheat</option>
+                <option value="soybean">Soybean</option>
+                <option value="corn">Corn</option>
+            </select>
+        </div>
 
-        <button onclick="recommendCrop()">Get Recommendation</button>
+        <button onclick="recommendCrop()"><i class="fas fa-search"></i> Get Recommendation</button>
 
         <div id="recommendation">
-            <h2>Recommended Crop:</h2>
+            <h2><i class="fas fa-clipboard-check"></i> Recommended Crop:</h2>
             <p id="cropName">Waiting for input...</p>
         </div>
     </div>
+
+    <div class="parallax"></div>
+
+    <div class="content">
+        <h2>About Our System</h2>
+        <p>Our Crop Recommendation System uses advanced algorithms to suggest the best crops for your region and conditions.</p>
+    </div>
+
+    <div class="image-section">
+        <div class="image-card">
+            <img src="photo1.jpg" alt="crop">
+            <p>Sustainable Farming</p>
+        </div>
+        <div class="image-card">
+            <img src="photo2.jpg" alt="crop">
+            <p>Innovative Agriculture</p>
+        </div>
+        <div class="image-card">
+            <img src="crop3.jpg" alt="crop">
+            <p>Precision Farming</p>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+    
+    <footer>
+        <p>&copy; 2025 Crop Recommendation System. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
